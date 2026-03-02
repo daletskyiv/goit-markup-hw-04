@@ -59,6 +59,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow:
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .nav-head {
@@ -99,9 +103,8 @@ img {
 
 .nav-link {
   position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link::after {
@@ -131,9 +134,7 @@ img {
 }
 
 .address-list {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list:hover,
@@ -161,6 +162,9 @@ img {
   background-image:
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -181,9 +185,7 @@ img {
 }
 
 .button {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   font-weight: 500;
@@ -344,14 +346,16 @@ img {
 
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
+}
+
+.social-link-logo {
+  fill: #f4f4fd;
 }
 
 /*PORTFOLIO SECTION*/
@@ -408,13 +412,15 @@ img {
   color: #f4f4fd;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .wrapper-text {
   transform: translateY(0%);
+}
+
+.portfolio-list-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
@@ -435,7 +441,11 @@ img {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.logo-footer-container {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -455,9 +465,23 @@ img {
   font-weight: 500;
   margin-bottom: 8px;
   text-align: start;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
 .footer-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-social-item {
+  gap: 16px;
+}
+
+.footer-social-logo {
+  fill: #f4f4fd;
 }
