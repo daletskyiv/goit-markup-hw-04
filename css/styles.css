@@ -11,7 +11,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -49,7 +48,7 @@ img {
   padding: 0 15px;
 }
 
-/*HEAADER*/
+/*HEADER*/
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -59,7 +58,7 @@ img {
     0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
-.header-conainer {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,10 +124,14 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-weight: 500;
   color: #2e2f42;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-list {
@@ -154,7 +157,7 @@ img {
 /*TITLE SECTION*/
 
 .title-section {
-  background-color: #2e2f42;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image:
@@ -163,6 +166,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #2e2f42;
 }
 
 .title {
