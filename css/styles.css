@@ -11,7 +11,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0 auto;
 }
 
 a {
@@ -130,8 +129,7 @@ img {
 
 .nav-link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .address-list {
@@ -251,7 +249,7 @@ img {
   gap: 24px;
 }
 
-.advantages-list-item {
+.title-three-advantages .advantages-list-item {
   width: calc((100%-96px) / 4);
 }
 
